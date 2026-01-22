@@ -1,0 +1,408 @@
+@keyframes flotter
+{
+	0%
+	{
+		transform: translateY(-2px);
+	}
+	
+	50%
+	{
+		transform: translateY(4px);
+	}
+	
+	100%
+	{
+		transform: translateY(-2px);
+	}
+}
+
+:root
+{
+	--main-color: #C6C6C6;
+	--main-bg: #000000;
+	--main-link: #FF9000; /* Orange */
+	--main-border: #252525;
+	
+	--header-bg: #0E0E0E;
+	--nav-bg-link: #191919;
+	--footer-color: #969696;
+	--footer-bg: #151515;
+	
+	--plan-bg: #FE9B00; /* Orange */
+	
+}
+
+body
+{
+	color: var(--main-color);
+	background-color: var(--main-bg);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a
+{
+	color: var(--main-link);
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+
+/* <header> */
+
+header
+{
+	color: white;
+	text-align: center;
+	background-color: var(--header-bg);
+	border-bottom: 1px solid var(--main-bg-footer);
+	margin: -8px -8px 30px -8px;
+	padding: 10px 0;
+}
+
+header h1
+{
+	font-size: 2em;
+	margin: 30px 0;
+}
+
+#g
+{
+	color: black;
+	background-color: var(--main-link);
+	padding: 2px;
+	border-radius: 5px;
+}
+
+header nav ul
+{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+header nav ul li
+{
+	margin: 0 10px;
+}
+
+header nav ul a
+{
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 10px 25px;
+	font-size: 0.8em;
+}
+
+header nav ul a:hover
+{
+	text-decoration: none;
+	background-color: var(--nav-bg-link);
+	border: 1px solid var(--main-border);
+}
+
+#here
+{
+	border-bottom: 1px solid var(--main-link);
+}
+
+
+
+
+/* <section> */
+
+section
+{
+	max-width: 900px;
+	margin: auto;
+}
+
+section p
+{
+	text-align: justify;
+	text-indent: 20px;
+}
+
+.msg_alert
+{
+	text-indent: 0;
+	padding: 5px 10px;
+	text-align: center;
+	color: white;
+	background-color: red;
+	border-radius: 5px;
+	animation-name: flotter;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+
+/* <footer> */
+
+footer
+{
+	margin: 40px -8px -8px -8px;
+	padding: 0;
+	font-size: 0.8em;
+	color: var(--footer-color);
+}
+
+footer div:first-child
+{
+	background-color: var(--footer-bg);
+    border-top: 1px solid #292929;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+footer li
+{
+	margin: 15px 0;
+}
+
+footer li:first-child
+{
+	font-weight: 700;
+	font-size: 1.3em;
+}
+
+footer div:last-child p
+{
+	text-align: right;
+	margin: 30px;
+}
+
+
+
+/* <table> */
+
+table
+{
+	width: 100%;
+	background-color: var(--header-bg);
+}
+
+table, th, td
+{
+	border-collapse: collapse;
+}
+
+th, td
+{
+	border: 1px solid var(--main-border);
+	padding: 5px;
+}
+
+th
+{
+	color: black;
+	background-color: var(--main-link);
+	border-color: black;
+}
+
+th[colspan="4"]
+{
+	background-color: orange;
+}
+
+.compta
+{
+	text-align: right;
+}
+
+.offre_gratuite .compta
+{
+	color: green;
+}
+
+#catalogue
+{
+	text-align: center;
+	color: black;
+	background-color: silver;
+}
+
+#catalogue img
+{
+	width: 150px;
+	mix-blend-mode: multiply;
+}
+
+#catalogue .stock
+{
+	display: none;
+}
+
+
+
+/* <form> */
+
+form
+{
+	
+}
+
+form p
+{
+	text-indent: 0;
+}
+
+form label
+{
+	font-weight: 700;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="date"], form textarea, form select, form input[type="radio"] + label
+{
+	background-color: var(--footer-bg);
+	padding: 15px 42px 15px 12px;
+	color: #C6C6C6;
+	border: 1px solid black;
+}
+
+form textarea
+{
+	width: 88%;
+}
+
+form input[type="radio"]
+{
+	display: none;
+}
+
+form input[type="radio"] + label
+{
+	font-weight: normal;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	border: 1px solid var(--main-link);
+	border-radius: 5px;
+}
+
+form input[type="radio"]:hover + label
+{
+	background-color: var(--nav-bg-link);
+}
+
+form input[type="radio"]:checked + label
+{
+	color: black;
+	background-color: var(--main-link);
+}
+
+
+form input[type="submit"]
+{
+	background-color: var(--main-link);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 6px 15px;
+	font-weight: 700;
+}
+
+form input[type="submit"]:hover
+{
+	background-color: #FFA31A;
+}
+
+*[readonly]
+{
+	cursor: not-allowed;
+}
+
+
+
+.mail_yes
+{
+	background-color: #8F8;
+	color: black;
+	padding: 3px 5px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.mail_no
+{
+	color: red;
+}
+
+.mail_no + p input, .mail_no + p textarea, .mail_no + p select, .mail_no + p input[type="radio"] + label
+{
+	border: 1px solid red;
+}
+
+
+
+/* JavaScript */
+
+
+button, button[disabled]:hover
+{
+	background-color: var(--main-link);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 6px 15px;
+	font-weight: 700;
+	margin: 5px 0;
+}
+
+button:hover
+{
+	background-color: #FFA31A;
+}
+
+button[disabled]
+{
+	opacity: 0.5;
+	cursor: not-allowed !important;
+}
+
+
+
+
+/* Media Queries */
+
+
+
+
+@media all and (max-width: 600px)
+{
+	/* <nav> */
+	header nav ul
+	{
+		display: unset;
+	}
+
+	header nav ul li
+	{
+		margin: 10px;
+	}
+	
+	/* <footer> */
+	footer div:first-child
+	{
+		display: unset;
+		text-align: center;
+	}
+}
+
+
+

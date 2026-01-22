@@ -1,0 +1,103 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<catalogue>
+	
+	<categorie type="classique">
+		<produit>
+			<id>c01</id>
+			<nom>Startone CG 851 1/8</nom>
+			<prix>38</prix>
+			<stock>11</stock>
+		</produit>
+		<produit>
+			<id>c02</id>
+			<nom>Yamaha GL1 Black</nom>
+			<prix>89</prix>
+			<stock>7</stock>
+		</produit>
+		<produit>
+			<id>c03</id>
+			<nom>Startone CG-851 1/8 Pink</nom>
+			<prix>37</prix>
+			<stock>7</stock>
+		</produit>
+		<produit>
+			<id>c04</id>
+			<nom>Yamaha GL1 Tobacco Brown Sunburst</nom>
+			<prix>89</prix>
+			<stock>7</stock>
+		</produit>
+		<produit>
+			<id>c05</id>
+			<nom>Ortega RGLE18FMH Guitarlele</nom>
+			<prix>398</prix>
+			<stock>7</stock>
+		</produit>
+	</categorie>
+	
+	<categorie type="folk">
+		<produit>
+			<id>f01</id>
+			<nom>Harley Benton D-120CE TB</nom>
+			<prix>88</prix>
+			<stock>12</stock>
+		</produit>
+		<produit>
+			<id>f02</id>
+			<nom>Gibson Hummingbird Dlx Burst</nom>
+			<prix>5290</prix>
+			<stock>12</stock>
+		</produit>
+		<produit>
+			<id>f03</id>
+			<nom>Gibson SJ-200 Original AN</nom>
+			<prix>5399</prix>
+			<stock>12</stock>
+		</produit>
+		<produit>
+			<id>f04</id>
+			<nom>Harley Benton GS-Travel-E Mahogany</nom>
+			<prix>138</prix>
+			<stock>12</stock>
+		</produit>
+		<produit>
+			<id>f05</id>
+			<nom>Martin Guitars 00-28 Modern Deluxe</nom>
+			<prix>5249</prix>
+			<stock>12</stock>
+		</produit>
+	</categorie>
+	
+	<categorie type="electrique">
+		<produit>
+			<id>e01</id>
+			<nom>Harley Benton CST-24T Purple Burst</nom>
+			<prix>277</prix>
+			<stock>29</stock>
+		</produit>
+		<produit>
+			<id>e02</id>
+			<nom>Gibson ES-335 Figured 60s Cherry</nom>
+			<prix>3699</prix>
+			<stock>22</stock>
+		</produit>
+		<produit>
+			<id>e03</id>
+			<nom>Jackson JS32T Rhoads AH WH</nom>
+			<prix>319</prix>
+			<stock>52</stock>
+		</produit>
+		<produit>
+			<id>e04</id>
+			<nom>Fender 61 Strat RW HRR NOS</nom>
+			<prix>4499</prix>
+			<stock>7</stock>
+		</produit>
+		<produit>
+			<id>e05</id>
+			<nom>Harley Benton DC-Custom 612 Cherry</nom>
+			<prix>548</prix>
+			<stock>3</stock>
+		</produit>
+	</categorie>
+	
+</catalogue>
